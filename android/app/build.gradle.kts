@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.theone.theone_flutter"
-    compileSdk = 33
+    compileSdk = 36
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -21,7 +21,7 @@ android {
     defaultConfig {
         applicationId = "com.theone.theone_flutter"
         minSdk = flutter.minSdkVersion
-        targetSdk = 33
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0.0"
     }
