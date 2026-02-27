@@ -22,6 +22,10 @@ jobs:
       - name: Get dependencies
         run: flutter pub get
       
+      - name: Generate Keystore
+        run: |
+          keytool -genkey -v -keystore android/app/keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias androiddebugkey -storepass android -keypass android -dname "CN=TheOne,OU=TheOne,O=TheOne,L=Rome,ST=Rome,C=IT"
+      
       - name: Build APK
         run: flutter build apk --release
       
